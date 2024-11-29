@@ -2,12 +2,16 @@ import { HStack, Link } from "@chakra-ui/react"
 
 function Navbar() {
   return (
-    <HStack ml={"6"} p={"6"} spaceX={"11"} fontSize={30}>
-        <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{textDecoration: "underline", scale: 1.1}}>Acceuil</Link>
-        <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{textDecoration: "underline", scale: 1.1}}>Qui suis-je</Link>
-        <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{textDecoration: "underline", scale: 1.1}}>Projets</Link>
-        <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{textDecoration: "underline", scale: 1.1}}>Contact</Link>
-    </HStack>
+    <header>
+      <nav>
+        <HStack ml={"6"} p={"6"} spaceX={"11"} fontSize={30}>
+          <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{ textDecoration: "underline", scale: 1.1 }}>Acceuil</Link>
+          <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{ textDecoration: "underline", scale: 1.1 }}>Qui suis-je</Link>
+          <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{ textDecoration: "underline", scale: 1.1 }}>Projets</Link>
+          <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{ textDecoration: "underline", scale: 1.1 }}>Contact</Link>
+        </HStack>
+      </nav>
+    </header>
   )
 }
 
