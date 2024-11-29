@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <header>
       <nav>
-        <HStack ml={"6"} p={"6"} spaceX={"11"} fontSize={30}>
+        <HStack backgroundColor={"rgba(0, 0, 0, 0.20)"} p={"6"} spaceX={"11"} fontSize={30}>
           <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{ textDecoration: "underline", scale: 1.1 }}>Acceuil</Link>
           <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{ textDecoration: "underline", scale: 1.1 }}>Qui suis-je</Link>
           <Link href={"/"} color={"white"} transition={"all 0.2s"} _hover={{ textDecoration: "underline", scale: 1.1 }}>Projets</Link>
