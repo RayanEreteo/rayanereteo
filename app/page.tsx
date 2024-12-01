@@ -20,7 +20,7 @@ export default function Home() {
       <main>
         <section className="to-up-anim" id="home" style={{marginTop: "200px", marginLeft: "60px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-around"}}>
           <Flex flexDir={"column"} id="main-title">
-            <HStack mb={6} spaceX={4}>
+            <HStack mb={10} spaceX={4}>
               <Link href="https://github.com/RayanEreteo"><BsGithub size={40} color="cyan"/></Link>
               <Link href="https://www.linkedin.com/in/rayan-ereteo-6998b9254/"><BsLinkedin size={40} color="cyan"/></Link>
             </HStack>
