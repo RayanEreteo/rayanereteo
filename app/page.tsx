@@ -21,8 +21,8 @@ export default function Home() {
         <section className="to-up-anim" id="home" style={{marginTop: "200px", marginLeft: "60px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-around"}}>
           <Flex flexDir={"column"} id="main-title">
             <HStack mb={10} spaceX={4}>
-              <Link href="https://github.com/RayanEreteo"><BsGithub size={40} color="cyan"/></Link>
-              <Link href="https://www.linkedin.com/in/rayan-ereteo-6998b9254/"><BsLinkedin size={40} color="cyan"/></Link>
+              <Link href="https://github.com/RayanEreteo" target="_blank"><BsGithub size={40} color="cyan"/></Link>
+              <Link href="https://www.linkedin.com/in/rayan-ereteo-6998b9254/" target="_blank"><BsLinkedin size={40} color="cyan"/></Link>
             </HStack>
             <Box>
               <Heading fontSize={80}>Rayan Ereteo</Heading>
@@ -30,7 +30,7 @@ export default function Home() {
             </Box>
             <HStack mt={6} spaceX={"10"} ml={"6"}>
               <a href="#home"><Button backgroundColor={"blue"}>Me contacter</Button></a>
-              <Button backgroundColor={"white"} color={"black"}>Mes projets</Button>
+              <a href="#projects"><Button backgroundColor={"black"}>Mes Projets</Button></a>
             </HStack>
           </Flex>
           <Flex flexDir={"column"} textAlign={"center"} id="bio">
@@ -40,6 +40,13 @@ export default function Home() {
                 return <Text fontWeight={"bold"} key={index}>{`${key} : ${bioList[key as keyof Object]}`}</Text>
               })}
             </VStack>
+          </Flex>
+        </section>
+        <section id="tech" style={{position: "relative", top: "200px"}}>
+          <hr></hr>
+          <Heading mt={10} textAlign={"center"} fontSize={80}>Compétences</Heading>
+          <Flex alignContent={"center"} justifyContent={"center"} flexDir={"column"}>
+              <Flex className="language"></Flex> 
           </Flex>
         </section>
       </main>
