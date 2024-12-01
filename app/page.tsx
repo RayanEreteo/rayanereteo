@@ -62,8 +62,9 @@ export default function Home() {
             </Flex>
           </Flex>
         </section>
-        <section>
+        <section id="projects" style={{ marginTop: "10rem" }}>
           <hr></hr>
+          <Heading mt={10} textAlign={"center"} fontSize={80}>Projets</Heading>
         </section>
       </main>
     </Box>
