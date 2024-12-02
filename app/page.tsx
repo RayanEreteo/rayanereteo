@@ -1,6 +1,7 @@
 "use client"
 
 import Navbar from "@/components/Navbar";
+import Project from "@/components/Project";
 import { Button } from "@/components/ui/button";
 import { Box, Flex, Heading, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -12,6 +13,7 @@ export default function Home() {
     Sexe: "M",
     Age: 22,
     Taille: "1m65",
+    Hobby: "Modélisation 3D, Mangas, reve lucide"
   }
 
   return (
@@ -45,12 +47,13 @@ export default function Home() {
         <section id="tech" style={{ marginTop: "10rem" }}>
           <hr></hr>
           <Heading mt={10} textAlign={"center"} fontSize={80}>Compétences</Heading>
-          <Flex alignContent={"center"} justifyContent={"center"} flexDir={"column"}>
-            <Heading mt={20} textAlign={"center"} fontSize={40}>Langages</Heading>
-            <Flex className="language" justifyContent={"space-around"} flexDir={"row"} mt={10} overflow={"hidden"}>
+          <Flex alignContent={"center"} justifyContent={"center"} flexDir={"column"} mt={20}>
+            <Heading textAlign={"center"} fontSize={40}>Langages</Heading>
+            <Flex className="language" justifyContent={"space-around"} flexDir={"row"} mt={10}>
               <Image src="/html.svg" w={"50px"} title="html"></Image>
               <Image src="/css.svg" w={"50px"} title="css"></Image>
               <Image src="/js.svg" w={"50px"} title="Javascript"></Image>
+              <Image src="/typescript.svg" w={"50px"} title="Python"></Image>
               <Image src="/php.svg" w={"50px"} title="PHP"></Image>
               <Image src="/python.svg" w={"50px"} title="Python"></Image>
             </Flex>
@@ -62,9 +65,14 @@ export default function Home() {
             </Flex>
           </Flex>
         </section>
-        <section id="projects" style={{ marginTop: "10rem" }}>
+        <section id="projects" style={{ marginTop: "6rem" }}>
           <hr></hr>
           <Heading mt={10} textAlign={"center"} fontSize={80}>Projets</Heading>
+          <Flex alignContent={"center"} justifyContent={"center"} flexDir={"row"} mt={20}>
+            <Flex alignContent={"center"} justifyContent={"center"} flexDir={"column"}>
+              <Project projectName="test" description="Retrouvez-vous à regarder des TikTok ou naviguer sur Twitter plutôt que de travailler ? Alors, cette extension est faite pour vous." ended={true} completionDate="17 novembre 2024" projectLink="https://github.com/RayanEreteo/AntiProcrastination"/>
+            </Flex>
+          </Flex>
         </section>
       </main>
     </Box>
