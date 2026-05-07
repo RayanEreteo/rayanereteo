@@ -1,12 +1,16 @@
 import './App.css'
 import Navbar from './components/Navbar'
+import VersionSwitcher from './VersionSwitcher'
 
 function App() {
-  let version = new URLSearchParams(document.location.search).get("ver")
-  if(!version || version === "" || (version != "classic" && version != "dev")) window.location.href = "http://localhost:5173/?ver=classic"
+  const version = new URLSearchParams(document.location.search).get("ver") ?? "classic"
+  if (version !== "classic" && version !== "dev") window.location.href = "http://localhost:5173/?ver=classic"
 
   return (
-    <Navbar />
+    <>
+      <Navbar />
+      <VersionSwitcher version={version} />
+    </>
   )
 }
 
