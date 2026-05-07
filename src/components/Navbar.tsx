@@ -26,7 +26,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-primary">Télécharger CV</a>
+                <a className="btn btn-primary" href="src\assets\CV_Rayan_Ereteo.pdf" download={"CV_Rayan_Ereteo"}>Télécharger CV</a>
             </div>
         </div>
     )
