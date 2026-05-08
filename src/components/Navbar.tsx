@@ -16,7 +16,7 @@ function Navbar() {
                         <li><a>Me contacter</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Rayan Ereteo</a>
+                <a className="btn btn-ghost text-xl" href="#HomeC">Rayan Ereteo</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
