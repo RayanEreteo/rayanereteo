@@ -13,7 +13,7 @@ function Navbar() {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><a>{version === "classic" ? "Soft Skills" : "Compétences"}</a></li>
                         <li><a>{version === "classic" ? "Expériences" : "Projets"}</a></li>
-                        <li><a>Me contacter</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-xl" href="#HomeC">Rayan Ereteo</a>
@@ -22,7 +22,7 @@ function Navbar() {
                 <ul className="menu menu-horizontal px-1">
                     <li><a>{version === "classic" ? "Soft Skills" : "Compétences"}</a></li>
                     <li><a>{version === "classic" ? "Expériences" : "Projets"}</a></li>
-                    <li><a>Me contacter</a></li>
+                    <li><a>Contact</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
