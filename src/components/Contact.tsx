@@ -8,9 +8,21 @@ function Contact() {
   const contactEmail = "ereteo.rayan1@gmail.com"
   const phoneNumber = "07 44 54 35 56"
 
-  const handleSubmit = (event: any) => {
-    event.preventDefault()
-  }
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event: any) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "a496cb2f-082e-49cf-97d7-0308898c073c");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+  };
 
   return (
     <section id="contact" className="bg-base-200 py-16">
@@ -53,7 +65,7 @@ function Contact() {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="rounded-[2rem] border border-base-300 bg-base-100 p-8 shadow-lg shadow-base-200/50">
+          <form onSubmit={onSubmit} className="rounded-[2rem] border border-base-300 bg-base-100 p-8 shadow-lg shadow-base-200/50">
             <div className="grid gap-6">
               <div className="form-control">
                 <label className="label">
