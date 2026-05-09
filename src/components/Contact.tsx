@@ -111,6 +111,7 @@ function Contact() {
               <button type="submit" className="btn btn-primary w-full py-4 text-base font-semibold">
                 Envoyer le message
               </button>
+              <p>{result}</p>
             </div>
           </form>
         </div>
