@@ -7,7 +7,7 @@ function Experiences() {
                 <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">Mes expériences professionnelle</li>
 
                 <li className="list-row">
-                    <div><img className="size-20 rounded-box" src="public\carrefour.png" /></div>
+                    <div><img className="size-20 rounded-box" src="\carrefour.png" /></div>
                     <div>
                         <div>Employé polyvalent - Carrefour</div>
                         <div className="text-xs uppercase font-semibold opacity-60">CDD</div>
@@ -18,7 +18,7 @@ function Experiences() {
                 </li>
 
                 <li className="list-row">
-                    <div><img className="size-20 rounded-box" src="public/kfc.png" /></div>
+                    <div><img className="size-20 rounded-box" src="/kfc.png" /></div>
                     <div>
                         <div>Équipier polyvalent - KFC</div>
                         <div className="text-xs uppercase font-semibold opacity-60">CDI</div>
