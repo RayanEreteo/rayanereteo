@@ -29,7 +29,7 @@ function Contact() {
           <div className="rounded-[2rem] border border-base-300 bg-base-100 p-8 shadow-lg shadow-base-200/50">
             <div className="space-y-6">
               <div>
-                <span className="text-sm uppercase tracking-[0.35em] text-primary">Phone</span>
+                <span className="text-sm uppercase tracking-[0.35em] text-primary">Téléphone</span>
                 <p className="mt-3 text-2xl font-semibold text-base-content">{phoneNumber}</p>
                 <a className="link link-hover text-base-content/70" href={`tel:${phoneNumber.replace(/\s+/g, "")}`}>
                   Cliquer pour appeler
