@@ -73,6 +73,7 @@ function Contact() {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   className="input input-bordered w-full bg-base-200"
                   placeholder="Votre nom OU celle de l'entreprise"
                   value={name}
@@ -87,6 +88,7 @@ function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   className="input input-bordered w-full bg-base-200"
                   placeholder="lorem@example.com"
                   value={email}
@@ -101,6 +103,7 @@ function Contact() {
                 </label>
                 <textarea
                   className="textarea textarea-bordered min-h-[160px] w-full bg-base-200"
+                  name="message"
                   placeholder="Dites moi votre proposition..."
                   value={message}
                   onChange={(event) => setMessage(event.target.value)}
