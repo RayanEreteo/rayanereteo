@@ -8,7 +8,7 @@ function SoftSkills() {
     ]
 
     return (
-        <section id="SoftSkills" className="py-16 px-4">
+        <section id="softskills" className="py-16 px-4">
             <div className="max-w-2xl mx-auto">
                 <h2 className="section-title text-center mb-12">Soft Skills</h2>
                 <div className="flex flex-wrap gap-4 justify-center">
