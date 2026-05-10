@@ -1,3 +1,4 @@
+import face from "../../assets/hidden.webp"
 
 function HomeC() {
   const d = new Date();
@@ -8,7 +9,7 @@ function HomeC() {
       <div className="motion-opacity-in-0 motion-translate-y-in-100 hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
           <img
-            src="src\assets\hidden.webp"
+            src={face}
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
