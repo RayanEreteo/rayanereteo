@@ -1,3 +1,6 @@
+import cvClassic from "../assets/CV_Rayan_Ereteo.pdf"
+import cvDev from "../assets/CV_Ereteo_Rayan.pdf"
+
 function Navbar() {
     let version = new URLSearchParams(document.location.search).get("ver")
 
@@ -24,7 +27,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-primary" href={version === "classic" ? "src/assets/CV_Rayan_Ereteo.pdf" : "src/assets/CV_Ereteo_Rayan.pdf"} download={"CV_Rayan_Ereteo"}>Télécharger CV</a>
+                <a className="btn btn-primary" href={version === "classic" ? cvClassic : cvDev} download={"CV_Rayan_Ereteo"}>Télécharger CV</a>
             </div>
         </div>
     )
