@@ -2,6 +2,7 @@ import Experiences from "./components/classic/Experiences"
 import HomeC from "./components/classic/HomeC"
 import SoftSkills from "./components/classic/SoftSkills"
 import Contact from "./components/Contact"
+import HomeD from "./components/dev/HomeD"
 
 function VersionSwitcher({ version }: {version:string}) {
     if (version === "classic") {
@@ -15,8 +16,7 @@ function VersionSwitcher({ version }: {version:string}) {
         )
     } else if (version === "dev") {
         return (
-            //! Placeholder
-            <HomeC />
+            <HomeD />
         )
     } else {
         return null
