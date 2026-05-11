@@ -20,6 +20,7 @@ function VersionSwitcher({ version }: {version:string}) {
             <>
                 <HomeD />
                 <Skills />
+                <Contact />
             </>
         )
     } else {
