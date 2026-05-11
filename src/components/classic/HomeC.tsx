@@ -5,7 +5,7 @@ function HomeC() {
   let year = d.getFullYear();
 
   return (
-    <section className="" id="Home">
+    <section id="Home">
       <div className="motion-opacity-in-0 motion-translate-y-in-100 hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
           <img
