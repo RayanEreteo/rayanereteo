@@ -32,7 +32,7 @@ function HomeD() {
               <FaGithub className="text-xl" />
             </a>
             <a
-              href="https://www.linkedin.com/in/rayanereteo"
+              href="https://www.linkedin.com/in/rayan-ereteo-65099437a/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
