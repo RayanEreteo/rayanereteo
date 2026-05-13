@@ -20,7 +20,7 @@ function Projects() {
       title: "Vaultio",
       description: "Gestionnaire de mot de passe.",
       image: "/thumbnail/codeonly.png",
-      url: "https://example.com/shop",
+      url: "https://github.com/RayanEreteo/Vaultio-Project",
       completed: false,
       tags: ["Node.js", "React", "API"],
     },
@@ -73,7 +73,7 @@ function Projects() {
                     rel="noreferrer"
                     className="btn btn-primary btn-sm"
                   >
-                    Voir le projet
+                    {project.completed ? "Voir le projet" : "Voir le code source"}
                   </a>
                   <span className="text-xs uppercase tracking-[0.24em] text-slate-400">{project.completed ? "Terminé": "En cours"}</span>
                 </div>
