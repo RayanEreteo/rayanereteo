@@ -6,7 +6,7 @@ function HomeD() {
       <div className="hero-content flex-col lg:flex-row gap-12 px-6 py-12 lg:px-12">
         <div className="text-center lg:text-left max-w-2xl">
           <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1 text-sm font-semibold text-primary mb-5">
-            Développeur full-stack · React & TypeScript
+            Développeur full-stack
           </span>
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900">
             Rayan Ereteo
