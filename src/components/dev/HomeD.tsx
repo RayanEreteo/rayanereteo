@@ -12,7 +12,7 @@ function HomeD() {
             Rayan Ereteo
           </h1>
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            Création d'expériences web modernes, performantes et accessibles avec React, Tailwind et une touche de design élégant.
+            Création d'expériences web (mais pas que !) modernes, performantes et accessibles avec React et Typescript.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -51,10 +51,10 @@ function HomeD() {
               <div className="flex flex-wrap gap-3">
                 <span className="badge badge-outline">React</span>
                 <span className="badge badge-outline">TypeScript</span>
-                <span className="badge badge-outline">Tailwind CSS</span>
+                <span className="badge badge-outline">NextJS</span>
                 <span className="badge badge-outline">Node.js</span>
-                <span className="badge badge-outline">API</span>
-                <span className="badge badge-outline">UI/UX</span>
+                <span className="badge badge-outline">Express</span>
+                <span className="badge badge-outline">C#</span>
               </div>
             </div>
             <div className="rounded-3xl border border-base-200 bg-base-200 p-6">
