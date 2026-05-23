@@ -21,8 +21,8 @@ function Projects() {
       description: "Gestionnaire de mot de passe.",
       image: "/thumbnail/codeonly.png",
       url: "https://github.com/RayanEreteo/Vaultio-Project",
-      completed: false,
-      tags: ["Node.js", "React", "API"],
+      completed: true,
+      tags: ["C#", ".NET Core", "AES-256"],
     },
   ]
 
