@@ -1,5 +1,14 @@
+type projectInfo = {
+  title: string,
+  description: string,
+  image: string,
+  url: string,
+  completed: boolean,
+  tags: string[],
+}
+
 function Projects() {
-  const projects = [
+  const projects: projectInfo[] = [
     {
       title: "Lives Pictures",
       description: "Application web pour organiser vos tâches, suivre l'avancement et garder une vue claire sur vos priorités.",
@@ -24,6 +33,14 @@ function Projects() {
       completed: true,
       tags: ["C#", ".NET Core", "AES-256"],
     },
+    {
+      title: "Suppression des aperçus IA",
+      description: "Supprime les aperçus générés par l’IA des résultats de recherche Google.",
+      image: "/thumbnail/airemover.png",
+      url: "https://github.com/RayanEreteo/AI-Overview-Remover",
+      completed: true,
+      tags: ["HTML", "Javascript"],
+    }
   ]
 
   return (
@@ -75,7 +92,7 @@ function Projects() {
                   >
                     {project.completed ? "Voir le projet" : "Voir le code source"}
                   </a>
-                  <span className="text-xs uppercase tracking-[0.24em] text-slate-400">{project.completed ? "Terminé": "En cours"}</span>
+                  <span className="text-xs uppercase tracking-[0.24em] text-slate-400">{project.completed ? "Terminé" : "En cours"}</span>
                 </div>
               </div>
             </article>
